@@ -1,0 +1,17 @@
+﻿<Window x:Class="OdinWPF.Military.PreBattle"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OdinWPF.Military"
+        mc:Ignorable="d"
+        Topmost="True"
+        Title="PreBattle" Height="200" Width="400">
+    <StackPanel>
+        <TextBlock TextWrapping="Wrap" Text="Что делать?" FontSize="16"/>
+        <Button x:Name="b1" Content="Бежать (возможны потери)" FontSize="16" Click="clicked"/>
+        <Button x:Name="b2" Content="Сражаться (смерти 10-15%)" FontSize="16" Click="clicked"/>
+        <Button x:Name="b3" Content="Отчаянно сражаться (атака х1.5, смерти 40-60%)" FontSize="16" Click="clicked"/>
+
+    </StackPanel>
+</Window>

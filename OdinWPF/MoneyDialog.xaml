@@ -1,0 +1,16 @@
+﻿<Window x:Class="OdinWPF.MoneyDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OdinWPF"
+        mc:Ignorable="d"
+        Title="MoneyDialog" Height="200" Width="400">
+    <StackPanel>
+        <TextBlock TextWrapping="Wrap" Text="TextBlock" x:Name="label1" FontSize="14"/>
+        <TextBox TextWrapping="Wrap" x:Name="tb1" FontSize="20"/>
+        <TextBlock TextWrapping="Wrap" Text="TextBlock" x:Name="label2" FontSize="14"/>
+        <TextBox TextWrapping="Wrap" x:Name="tb2" FontSize="16"/>
+        <Button Content="OK" Click="bclick" Width="100" Height="30" FontSize="14"/>
+    </StackPanel>
+</Window>

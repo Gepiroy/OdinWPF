@@ -1,0 +1,25 @@
+﻿<UserControl x:Class="OdinWPF.ProjectSystem.ProjectControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:OdinWPF.ProjectSystem"
+             mc:Ignorable="d" 
+             MouseUp="click"
+             Cursor="Hand"
+             Height="200"
+             
+             d:DesignWidth="400" Background="White" >
+    <Border BorderBrush="Black" BorderThickness="1">
+        <StackPanel Margin="5">
+            <TextBlock x:Name="name" Text="Name of the project" FontSize="18"/>
+            <StackPanel Margin="5" x:Name="subs">
+                <local:StepControl />
+                <local:StepControl />
+                <local:StepControl />
+                <local:StepControl />
+                <local:StepControl />
+            </StackPanel>
+        </StackPanel>
+    </Border>
+</UserControl>
